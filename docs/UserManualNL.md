@@ -209,9 +209,10 @@ Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
   Elke unieke combinatie van apparaten, sensoren, datastromen, en observatiedoelen heeft in de lijst een eigen rij.
   Een apparaat komt dus meerdere keren in de input lijst voor wanneer er bijvoorbeeld meerdere sensoren zijn.
   Een sensor en het bijbehorende apparaat komen meerdere keren voor bij meerdere datastromen, etc.
-- Het script controleert niét of de betreffende apparaten en sensoren al eerder zijn opgevoerd.
+- Het script controleert niét of de betreffende apparaten, sensoren, en datastromen al eerder zijn opgevoerd.
   Controleer dit dus zelf.
   Voor een toevoeging van een sensor aan een bestaande device, en/of een toevoeging van een bestaande datastroom is dit script (nog) niet geschikt.
+- Het script volgt de aanname dat unieke sensoren te onderscheiden zijn door in verschil in attributen (bijvoorbeeld door een andere naam). 
 - Het script volgt de aanname dat datastromen met precies dezelfde velden ook dezelfde observatiedoelen hebben.
 - Wijzigt de wijze waarop een veld aangeleverd moet worden (lijst in plaats van een string bijvoorbeeld), of komt er bijvoorbeeld een nieuw veld bij?
   Dan moet deze wijziging zowel in het input template, als het script handmatig worden doorgevoerd.
